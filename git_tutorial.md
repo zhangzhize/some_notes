@@ -55,3 +55,12 @@
     2. 仓库里添加html文件
     3. 使用username.github.io直接访问
 * 注意：github pages仅支持静态网页
+
+
+## 出现 could not resolve proxy:http
+**解决方法**：
+> ```git config --global https.proxy ""```  
+> ```git config --global http.proxy ""```  
+> ```export http_proxy=""```  
+> ```export https_proxy=""```  
+> ```export all_proxy=""```
