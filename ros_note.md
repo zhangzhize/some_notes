@@ -48,7 +48,8 @@ tf2::convert(q_new,commanded_pose.pose.orientation);
 	
 **反转四元素**
 反转四元素的简单方法是对w分量取反
-```q[3]=-q[3];
+```
+q[3]=-q[3];
 ```
 	
 ##相对旋转
