@@ -5,6 +5,7 @@
 **使用geometry_msgs::Quaternion和tf2::Quaternion的区别**
 * 前者可以直接赋给TF.transform.rotation，后者则是逐一使用成员函数返回四元素的值。
 * 两者创建四元素的方法不同
+
 > ```
 	geometry_msgs::Quaternion q;
 	q.create...
@@ -12,4 +13,3 @@
 	q2.setRPY(roll,pitch,yaw);
 ```
 	
-
