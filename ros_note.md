@@ -12,3 +12,59 @@ tf2::Quaternion q2;
 q2.setRPY(roll,pitch,yaw);
 ```
 	
+## quaternion basic
+* ros的四元素表示的顺序是(x,y,z,w)；而eigen四元素表示的顺序是(w,x,y,z).
+* 不代表旋转的单位四元素是(0,0,0,1).
+* 必须保证四元素的模长为1，可使用```q.normalize();```进行归一化
+* ros中两种quaternion type的转换
+```
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+tf2::Quaternion quat_tf;
+geometry_msgs::Quaternion quat_msg=...;
+//three methods
+tf2::convert(quat_msg,quat_tf);
+//or
+tf2::fromMsg(quat_msg,quat_tf);
+//或者反过来
+quat_msg=tf2::toMsg(quat_tf);
+```
+	
+**应用quaternion**
+将四元素应用在姿态变换上，只需要将旧的四元素乘以代表旋转的四元素，**注意相乘的顺序很重要**
+```
+#include <tf2_geometry_msgs/tf2_geometry_msgs.h>
+tf2::Quaternion q_orig,q_rot,q_new;
+//get the original orientation of 'commanded_pose'
+tf2::convert(commanded_pose.pose.orientation,q_orig);
+
+double r=3.1159,p=0,y=0;
+q_rot.setRPY(r,p,y);
+q_new=q_rot*q_orig;
+q_new.normalize();
+
+//将新的四元素填回位姿，这需要转换为msg类型
+tf2::convert(q_new,commanded_pose.pose.orientation);
+```
+	
+**反转四元素**
+反转四元素的简单方法是对w分量取反
+```q[3]=-q[3];
+```
+	
+##相对旋转
+如果有同一帧的两个四元素q1和q2，如果想找到**q1到q2的相对旋转qr**
+```
+//q2=qr*q1;
+//qr=q2*q1.inverse
+//c++示例
+q1_inv[0]=q1[0];
+q1_inv[1]=q1[1];
+q1_inv[2]=q1[2];
+q1_inv[3]=q1[3];
+q2[0]=current_pose.orientation.x;
+q2[1]=current_pose.orientation.y;
+q2[2]=current_pose.orientation.z;
+q2[3]=current_pose.orientation.w;
+qr=q2*q1_inv;
+```
+
