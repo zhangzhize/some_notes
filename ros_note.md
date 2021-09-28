@@ -84,8 +84,12 @@ qr=q2*q1_inv;
 
 * 检查fame
 	* ```rosrun tf tf_echo frameA frameB```
+	* ```rosrun tf2 tf2_echo frameA frameB```
+	* ```rosrun tf view_frames | evince frames.pdf```
+	* ```rosrun tf2_tools view_frames | evince frames.pdf```
 * 检查时间戳
 	* ```rosrun tf tf_monitor frameA frameB```
+	* ```rosrun tf2 tf2_monitor frameA frameB```
 	* 由于时间延迟，一般不能够查询到ros::Time::now()时间点的坐标变换
 	* 出现too far in the past提示，注意tf只保持10s的buffer(可设置)
 
