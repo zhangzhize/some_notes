@@ -68,4 +68,25 @@ q2[2]=current_pose.orientation.z;
 q2[3]=current_pose.orientation.w;
 qr=q2*q1_inv;
 ```
+	
+## tf dubug
+### 几种debug tf问题的策略
+1. 搞清楚你想用tf干什么？
+2. 在tf buffer中检查frame
+2. 检查tf buffer的时间戳
+
+**Finding the tf request**
+在debug之前，需要知道
+1. 需要监听的tf的两个坐标系的名称
+2. 是哪个时间点的transform
+
+[未理解1.2 'usingtransformPoint、transformVector，etc'](https://wiki.ros.org/tf/Troubleshooting)
+
+* 检查fame
+	* ```rosrun tf tf_echo frameA frameB```
+* 检查时间戳
+	* ```rosrun tf tf_monitor frameA frameB```
+	* 由于时间延迟，一般不能够查询到ros::Time::now()时间点的坐标变换
+	* 出现too far in the past提示，注意tf只保持10s的buffer(可设置)
+
 
