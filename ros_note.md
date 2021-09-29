@@ -110,4 +110,31 @@ tf2_filter_.registerCallback(boost::bind(&msgCallback,this,_1));
 //当到目标坐标系的tf变换可用时，进入回调函数 
 //...buffer_.transform(...);
 ```
-
+	
+## [MessageFilter](http://wiki.ros.org/message_filters)
+* message_filter是roscpp和rospy的一个应用库，集中了一些滤波算法中常用的一些消息。
+* message_filter类似一个消息缓存，当消息到达消息过滤器时，可能并不会立即输出，而是在稍后的时间里**满足一定条件下输出**。
+* 主要用法一：消息的订阅与回调
+```
+message_filters::Subscriber<std::msgs::Uint32> sub(nh,"my_topic",1);
+sub.registerCallback(myCallback);
+//等价于
+ros::Subscriber sub=nh.subscribe("my_topic",1,myCallback);
+```
+* 主要用法之二：时间同步
+**TimeSynchronizer**筛选器通过包含在header中的时间戳**同步进入的通道**，并以相同数量的通道的单个回调的形式输出他们。C++实现最多同步9个通道
+```
+message_filters::Subscriber<Imaga> image_sub(nh,"image",1);
+message_filters::Subscriber<CameraInfo> info_sub(nh,"camera_info",1);
+TimeSynchronizer<Image,CameraInfo> sync(image_sub,info_sub,10);
+sync.registerCallback(boost::bind(&callback,_1,_2));
+//...
+```
+	
+* 主要用法之三：时间顺序的回调
+**TimeSquencer**确保将小系统的时间戳**按时间顺序调用消息**。TimeSquencer具有特定的延迟，该延迟制定了在传递消息之前将消息排队的时间，在消息的时间戳**小于指定的延迟之前，永远不会调用消息的回调**。但是对于所有至少经过延迟过时的消息，将调用他们的回调并保证其按时间顺序排序。**如果消息是在消息以调用回调之前的某个时间到达的，则会将其丢弃。**
+```
+message_filters::Subscriber<std::msgs::String> sub(nh,"mytopic",1);
+message_filters::TimeSequencer<std::msgs::String> seq(sub,ros::Duration(0.1),ros::Duration(0.01),10);
+seq.registerCallback(myCallback);
+```
