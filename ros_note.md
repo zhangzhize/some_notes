@@ -93,4 +93,21 @@ qr=q2*q1_inv;
 	* 由于时间延迟，一般不能够查询到ros::Time::now()时间点的坐标变换
 	* 出现too far in the past提示，注意tf只保持10s的buffer(可设置)
 
+## 使用```tf2_ros::MessageFilter```处理stamped类型的数据
+* tf2_ros::MessageFilter订阅任何带有header类型的msg，并将其缓存，直至可以将该msg数据转换到目标frame。
+* example
+```
+std::string target_frame_="turtle1";
+//tf
+tf2_ros::Buffer buffer_;
+tf2_ros::TransformListener tf2_(buffer_);
+//pointStamped msg
+ros::NodeHandle n_;
+message_filters::Subscriber<geometry_msgs::PointStamped> point_sub_;
+point_sub_.subscribe(n_,"turtle_point_frame_,10);
+tf2_ros::MessageFilter<geometry_msgs::PointStamped> tf2_filter_(point_sub_,buffer_,target_frame_,10,0);
+tf2_filter_.registerCallback(boost::bind(&msgCallback,this,_1));
+//当到目标坐标系的tf变换可用时，进入回调函数 
+//...buffer_.transform(...);
+```
 
