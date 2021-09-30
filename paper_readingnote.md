@@ -25,3 +25,18 @@
 **摘要**：在非结构化环境中，盲目行走容易使机器人因与地面接触不稳定而失去平衡或倒塌。解决这个问题的一种方法时调整步态周期和步态模式。**步态周期调节步态速度，以减轻足部接触地面时的冲击量；步态模式起到稳定机器人底座平衡的作用，使其免受外界干扰或地面冲击**。这篇文章使用**具有可调步态周期和步态模式的凸模型预测为控制（MPC）的步态控制器。**
 
 
+## 收集
+**title**:[Efficient Multicontact Pattern Generation With Sequential Convex Approximations of the Centroidal Dynamics](https://ieeexplore.ieee.org/document/9350175)
+**title**:[Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds](https://ieeexplore.ieee.org/document/9321699)
+**title**:[Proprioceptive Sensor Fusion for Quadruped Robot State Estimation](https://ieeexplore.ieee.org/document/9341521)
+**title**:[Risk-Averse MPC via Visual-Inertial Input and Recurrent Networks for Online Collision Avoidance](https://ieeexplore.ieee.org/document/9341070)
+**title**:[Robust Autonomous Navigation of a Small-Scale Quadruped Robot in Real-World Environments](https://ieeexplore.ieee.org/document/9340701)
+**title**:[Line Walking and Balancing for Legged Robots with Point Feet](https://ieeexplore.ieee.org/document/9341743)
+
+
+
+
+
+
+
+
