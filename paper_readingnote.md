@@ -26,53 +26,53 @@
 
 
 ## 收集
-**title**:[Efficient Multicontact Pattern Generation With Sequential Convex Approximations of the Centroidal Dynamics](https://ieeexplore.ieee.org/document/9350175)
-**title**:[Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds](https://ieeexplore.ieee.org/document/9321699)
-**title**:[Proprioceptive Sensor Fusion for Quadruped Robot State Estimation](https://ieeexplore.ieee.org/document/9341521)
-**title**:[Risk-Averse MPC via Visual-Inertial Input and Recurrent Networks for Online Collision Avoidance](https://ieeexplore.ieee.org/document/9341070)
-**title**:[Robust Autonomous Navigation of a Small-Scale Quadruped Robot in Real-World Environments](https://ieeexplore.ieee.org/document/9340701)
-**title**:[Line Walking and Balancing for Legged Robots with Point Feet](https://ieeexplore.ieee.org/document/9341743)
+**title**:[Efficient Multicontact Pattern Generation With Sequential Convex Approximations of the Centroidal Dynamics](https://ieeexplore.ieee.org/document/9350175)  
+**title**:[Representation-Free Model Predictive Control for Dynamic Motions in Quadrupeds](https://ieeexplore.ieee.org/document/9321699)  
+**title**:[Proprioceptive Sensor Fusion for Quadruped Robot State Estimation](https://ieeexplore.ieee.org/document/9341521)  
+**title**:[Risk-Averse MPC via Visual-Inertial Input and Recurrent Networks for Online Collision Avoidance](https://ieeexplore.ieee.org/document/9341070)  
+**title**:[Robust Autonomous Navigation of a Small-Scale Quadruped Robot in Real-World Environments](https://ieeexplore.ieee.org/document/9340701)  
+**title**:[Line Walking and Balancing for Legged Robots with Point Feet](https://ieeexplore.ieee.org/document/9341743)  
 ## Founded in ICRA2020
-**title**:[An Open Torque-Controlled Modular Robot Architecture for Legged Locomotion Research]
-**title**:[Mechanical Shock Propagation Reduction in Robot Legs]
-**title**:[Guided Constrained Policy Optimization for Dynamic Quadrupedal Robot Locomotion]
-**title**:[MPC-Based Controller with Terrain Insight for Dynamic Legged Locomotion]
-**title**:[Joint Space Position/Torque Hybrid Control of the Quadruped Robot for Locomotion and Push Reaction]
-**title**:[Vision Aided Dynamic Exploration of Unstructured Terrain with a Small-Scale Quadruped Robot]
-**title**:[Reliable Trajectories for Dynamic Quadrupeds Using Analytical Costs and Learned Initializations]
-**title**:[On the Hardware Feasibility of Nonlinear Trajectory Optimization for Legged Locomotion Based on a Simplified Dynamics]
-**title**:[Planning for the Unexpected: Explicitly Optimizing Motions for Ground Uncertainty in Running]
-**title**:[Preintegrated Velocity Bias Estimation to Overcome Contact Nonlinearities in Legged Robot Odometry]
-**title**:[Optimized Foothold Planning and Posture Searching for Energy-Efficient Quadruped Locomotion Over Challenging Terrains]
-**title**:[Precision Robotic Leaping and Landing Using Stance-Phase Balance]
-**title**:[STANCE: Locomotion Adaptation Over Soft Terrain (I)]
-**title**:[Optimal Landing Strategy for Two-Mass Hopping Leg with Natural Dynamics]
-**title**:[From Bipedal Walking to Quadrupedal Locomotion: Full-Body Dynamics Decomposition for Rapid Gait Generation]
-**title**:[DeepGait: Planning and Control of Quadrupedal Gaits Using Deep Reinforcement Learning]
-**title**:[The Soft-Landing Problem: Minimizing Energy Loss by a Legged Robot Impacting Yielding Terrain]
-**title**:[LiStereo: Generate Dense Depth Maps from LIDAR and Stereo Imagery]
+**title**:[An Open Torque-Controlled Modular Robot Architecture for Legged Locomotion Research]  
+**title**:[Mechanical Shock Propagation Reduction in Robot Legs]  
+**title**:[Guided Constrained Policy Optimization for Dynamic Quadrupedal Robot Locomotion]  
+**title**:[MPC-Based Controller with Terrain Insight for Dynamic Legged Locomotion]  
+**title**:[Joint Space Position/Torque Hybrid Control of the Quadruped Robot for Locomotion and Push Reaction]  
+**title**:[Vision Aided Dynamic Exploration of Unstructured Terrain with a Small-Scale Quadruped Robot]  
+**title**:[Reliable Trajectories for Dynamic Quadrupeds Using Analytical Costs and Learned Initializations]  
+**title**:[On the Hardware Feasibility of Nonlinear Trajectory Optimization for Legged Locomotion Based on a Simplified Dynamics]  
+**title**:[Planning for the Unexpected: Explicitly Optimizing Motions for Ground Uncertainty in Running]  
+**title**:[Preintegrated Velocity Bias Estimation to Overcome Contact Nonlinearities in Legged Robot Odometry]  
+**title**:[Optimized Foothold Planning and Posture Searching for Energy-Efficient Quadruped Locomotion Over Challenging Terrains]  
+**title**:[Precision Robotic Leaping and Landing Using Stance-Phase Balance]  
+**title**:[STANCE: Locomotion Adaptation Over Soft Terrain (I)]  
+**title**:[Optimal Landing Strategy for Two-Mass Hopping Leg with Natural Dynamics]  
+**title**:[From Bipedal Walking to Quadrupedal Locomotion: Full-Body Dynamics Decomposition for Rapid Gait Generation]  
+**title**:[DeepGait: Planning and Control of Quadrupedal Gaits Using Deep Reinforcement Learning]  
+**title**:[The Soft-Landing Problem: Minimizing Energy Loss by a Legged Robot Impacting Yielding Terrain]  
+**title**:[LiStereo: Generate Dense Depth Maps from LIDAR and Stereo Imagery]  
 
-**title**:[LiStereo: Generate Dense Depth Maps from LIDAR and Stereo Imagery]
-**title**:[Automatic Snake Gait Generation Using Model Predictive Control]
-**title**:[Safe and Fast Tracking on a Robot Manipulator: Robust MPC and Neural Network Control]
-**title**:[Real-Time Nonlinear Model Predictive Control of Robots Using a Graphics Processing Unit]
-**title**:[An NMPC Approach Using Convex Inner Approximations for Online Motion Planning with Guaranteed Collision Avoidance]
-**title**:[Virtual Point Control Strategy with Power Optimization for Trajectory Planning of Autonomous Mobile Robots]
-**title**:[Bi-Convex Approximation of Non-Holonomic Trajectory Optimization]
-**title**:[Robust and Efficient Estimation of Absolute Camera Pose for Monocular Visual Odometry]
-**title**:[Collision-Free Navigation of Human-Centered Robots Via Markov Games]
-**title**:[DenseCAvoid: Real-Time Navigation in Dense Crowds Using Anticipatory Behaviors]
-**title**:[Observer-Extended Direct Method for Collision Monitoring in Robot Manipulators Using Proprioception and IMU Sensing]
-**title**:[Forward Kinematics Kernel for Improved Proxy Collision Checking]
-**title**:[Predicting Obstacle Footprints from 2D Occupancy Maps by Learning from Physical Interactions]
+**title**:[LiStereo: Generate Dense Depth Maps from LIDAR and Stereo Imagery]  
+**title**:[Automatic Snake Gait Generation Using Model Predictive Control]  
+**title**:[Safe and Fast Tracking on a Robot Manipulator: Robust MPC and Neural Network Control]  
+**title**:[Real-Time Nonlinear Model Predictive Control of Robots Using a Graphics Processing Unit]  
+**title**:[An NMPC Approach Using Convex Inner Approximations for Online Motion Planning with Guaranteed Collision Avoidance]  
+**title**:[Virtual Point Control Strategy with Power Optimization for Trajectory Planning of Autonomous Mobile Robots]  
+**title**:[Bi-Convex Approximation of Non-Holonomic Trajectory Optimization]  
+**title**:[Robust and Efficient Estimation of Absolute Camera Pose for Monocular Visual Odometry]  
+**title**:[Collision-Free Navigation of Human-Centered Robots Via Markov Games]  
+**title**:[DenseCAvoid: Real-Time Navigation in Dense Crowds Using Anticipatory Behaviors]  
+**title**:[Observer-Extended Direct Method for Collision Monitoring in Robot Manipulators Using Proprioception and IMU Sensing]  
+**title**:[Forward Kinematics Kernel for Improved Proxy Collision Checking]  
+**title**:[Predicting Obstacle Footprints from 2D Occupancy Maps by Learning from Physical Interactions]  
 **title**:[Path Planning in Dynamic Environments Using Generative RNNs and Monte Carlo Tree Search]
 
 
 ## founded in ICRA2019(keywords:quadrup)
-**title**:[Mini Cheetah - A Platform for Pushing the Limits of Dynamic Quadruped Control]
-**title**:[Single-Shot Foothold Selection and Constraint Evaluation for Quadruped Locomotion]
-**title**:[Stanford Doggo - An Open-Source Quasi-Direct-Drive Quadruped]
-**title**:[Real-Time Model Predictive Control for Versatile Dynamic Motions in Quadrupedal Robots]
+**title**:[Mini Cheetah - A Platform for Pushing the Limits of Dynamic Quadruped Control]  
+**title**:[Single-Shot Foothold Selection and Constraint Evaluation for Quadruped Locomotion]  
+**title**:[Stanford Doggo - An Open-Source Quasi-Direct-Drive Quadruped]  
+**title**:[Real-Time Model Predictive Control for Versatile Dynamic Motions in Quadrupedal Robots]  
 
 
 
